@@ -1,0 +1,19 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border-radius: 50%;
+  background: var(--color-badge);
+  color: var(--color-ink);
+}
+
+.md {
+  width: 64px;
+  height: 64px;
+}
+
+.lg {
+  width: 80px;
+  height: 80px;
+}

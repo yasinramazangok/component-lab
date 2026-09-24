@@ -1,0 +1,85 @@
+/*
+ * Design tokens
+ * -------------
+ * A token is a named design value: a color, a font, a size.
+ * Components never use raw values like #1f1f2b. They use the token name,
+ * for example var(--color-ink). To restyle the whole kit, change this file only.
+ *
+ * Values were picked by eye from a reference login screen.
+ * Hover, pressed, disabled and error colors were not visible there, so they are my own estimates.
+ */
+:root {
+  /* Color — neutrals */
+  --color-ink: #1f1f2b;            /* primary button, headings, strong text */
+  --color-ink-hover: #34344a;      /* estimate */
+  --color-ink-pressed: #111118;    /* estimate */
+  --color-on-ink: #ffffff;         /* text on primary button */
+  --color-text: #2b2b36;           /* body text, input value */
+  --color-text-muted: #5f6172;     /* subtitles, helper text */
+  --color-text-subtle: #8a8c99;    /* placeholders */
+  --color-surface: #ffffff;        /* inputs, secondary buttons */
+  --color-surface-hover: #f6f4f0;  /* estimate */
+  --color-canvas-start: #fcfbf8;   /* page background (gradient start) */
+  --color-canvas-end: #f4efe6;     /* page background (gradient end) */
+  --color-border: #cdcbd2;         /* input and outline button borders */
+  --color-border-strong: #1f1f2b;  /* focused input */
+  --color-divider: #dcd8d1;
+  --color-badge: #f2ebe1;          /* round icon background */
+
+  /* Color — feedback (estimates) */
+  --color-disabled-bg: #d9d8de;
+  --color-disabled-text: #7b7c88;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdecea;
+  --color-focus-ring: #6b8afd;
+
+  /* Typography */
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-size-xs: 0.75rem;   /* 12px — legal text */
+  --font-size-sm: 0.875rem;  /* 14px — labels */
+  --font-size-md: 1rem;      /* 16px — body, links */
+  --font-size-lg: 1.125rem;  /* 18px — buttons */
+  --font-size-display: 3rem; /* 48px — page title */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Spacing and shape */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --radius-input: 6px;
+  --radius-pill: 999px;
+  --height-button-sm: 40px;
+  --height-button-md: 48px;
+  --height-input: 56px;
+  --width-form: 470px;
+  --motion-fast: 120ms;
+}
+
+/* Dark theme: same token names, different values. Components do not change. */
+[data-theme="dark"] {
+  --color-ink: #f1efe9;
+  --color-ink-hover: #ffffff;
+  --color-ink-pressed: #d9d6cf;
+  --color-on-ink: #1f1f2b;
+  --color-text: #e7e5ee;
+  --color-text-muted: #a9abb8;
+  --color-text-subtle: #7d7f8c;
+  --color-surface: #1c1c26;
+  --color-surface-hover: #262633;
+  --color-canvas-start: #15151d;
+  --color-canvas-end: #1b1a22;
+  --color-border: #4a4a58;
+  --color-border-strong: #f1efe9;
+  --color-divider: #34343f;
+  --color-badge: #2a2833;
+  --color-disabled-bg: #34343f;
+  --color-disabled-text: #8a8c99;
+  --color-danger: #ff8a80;
+  --color-danger-soft: #3b1f1e;
+}
